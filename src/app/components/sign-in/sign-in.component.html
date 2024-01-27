@@ -1,0 +1,34 @@
+<form [formGroup]="logInForm" class="flex center-center">
+    <div class="height-90 width-90 flex center-center gap-2em">
+        <div class="width-40">
+            <img class="full-width full-height" src="../../../assets/images/leave.jpg" alt="">
+        </div>
+        <div class="width-40 flex column">
+            <mat-form-field class="full-width">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" type="email" matInput placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="">
+                    Please enter a valid email address
+                </mat-error>
+                <mat-error *ngIf="logInForm.get('email')?.hasError('required')">
+                    Email is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" type="password" matInput placeholder="Ex. pat@example.com">
+                <mat-error *ngIf="">
+                    Please enter a valid Password
+                </mat-error>
+                <mat-error *ngIf="logInForm.get('password')?.hasError('required')">
+                    Email is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <div class="flex center-center">
+                <button class="half-width" mat-stroked-button color="primary">Sign Up</button>
+    
+            </div>
+        </div>
+    </div>
+
+</form>

@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-height  {
+    height: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.start-center {
+    justify-content: center;
+}
+
+.gap-2em {
+    gap: 2em
+}
+
+.center-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.height-90 {
+    height: 90%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
+button {
+    background-color: black;
+    margin-top: 10px;
+}
+
+
+
+// Materials styles
+
+button .mat-mdc-button-touch-target {
+    background-color: bisque;
+}
